@@ -45,3 +45,25 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+# Student Grade System
+
+# Read student score
+score = int(input("Enter student score (0-100): "))
+
+# Check if score is within valid range
+if score < 0 or score > 100:
+    print("Error: Score must be between 0 and 100.")
+else:
+    # Determine grade based on scale
+    if score >= 80:
+        grade = "A"
+    elif score >= 70:
+        grade = "B"
+    elif score >= 60:
+        grade = "C"
+    elif score >= 50:
+        grade = "D"
+    else:
+        grade = "F"
+
+    print("Grade:", grade)
